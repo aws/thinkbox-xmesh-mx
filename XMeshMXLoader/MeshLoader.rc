@@ -1,0 +1,404 @@
+// Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: Apache-2.0
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MESHCACHE DIALOGEX 0, 0, 108, 115
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "XMesh Loader Object\nCopyright © 2005-2016\nThinkbox Software",IDC_STATIC,4,12,99,32
+    CONTROL         "Store Velocity Data",IDC_STORE_VELOCITY,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | WS_TABSTOP,10,57,85,10
+    GROUPBOX        "Velocity Options",IDC_STATIC,6,43,96,64
+    CONTROL         "Custom1",IDC_VELOCITY_EDIT,"CustEdit",WS_TABSTOP,52,68,34,10
+    CONTROL         "Custom2",IDC_VELOCITY_SPINNER,"SpinnerControl",WS_TABSTOP,87,68,8,10
+    LTEXT           "Channel:",IDC_STATIC,11,68,37,10
+    CONTROL         "Custom1",IDC_CLAMP_EDIT,"CustEdit",WS_TABSTOP,52,79,34,10
+    CONTROL         "Custom2",IDC_CLAMP_SPINNER,"SpinnerControl",WS_TABSTOP,87,79,8,10
+    LTEXT           "Scale:",IDC_STATIC,11,79,37,10
+    CONTROL         "Custom1",IDC_THRESH_EDIT,"CustEdit",WS_TABSTOP,52,90,34,10
+    CONTROL         "Custom2",IDC_THRESH_SPINNER,"SpinnerControl",WS_TABSTOP,87,90,8,10
+    LTEXT           "Threshold:",IDC_STATIC,11,90,37,10
+END
+
+IDD_MESHCACHEMOD DIALOGEX 0, 0, 108, 162
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "...",IDC_MESHCACHEMOD_SEQ_BUTTON,"CustButton",WS_TABSTOP,94,12,12,12
+    CONTROL         "Custom1",IDC_MESHCACHEMOD_RELOAD_SEQ_BUTTON,"CustButton",WS_TABSTOP,6,26,96,12
+    LTEXT           "Cache Sequence:",IDC_STATIC,3,2,57,8
+    GROUPBOX        "Timing",IDC_STATIC,2,43,104,75
+    CONTROL         "Custom1",IDC_MESHCACHEMOD_GRAPH_EDIT,"CustEdit",WS_TABSTOP,58,55,36,10
+    CONTROL         "Custom2",IDC_MESHCACHEMOD_GRAPH_SPINNER,"SpinnerControl",WS_TABSTOP,94,55,8,10
+    CONTROL         "Graph [a]:",IDC_MESHCACHEMOD_GRAPH_CHECKBOX,"Button",BS_AUTOCHECKBOX | BS_RIGHT | WS_TABSTOP,8,55,47,10
+    CONTROL         "Custom1",IDC_MESHCACHEMOD_OFFSET_EDIT,"CustEdit",WS_TABSTOP,58,67,36,10
+    CONTROL         "Custom2",IDC_MESHCACHEMOD_OFFSET_SPINNER,"SpinnerControl",WS_TABSTOP,94,67,8,10
+    CONTROL         "Custom1",IDC_MESHCACHEMOD_RANGEMIN_EDIT,"CustEdit",WS_TABSTOP,58,91,36,10
+    CONTROL         "Custom2",IDC_MESHCACHEMOD_RANGEMIN_SPINNER,
+                    "SpinnerControl",WS_TABSTOP,94,91,8,10
+    CONTROL         "Custom1",IDC_MESHCACHEMOD_RANGEMAX_EDIT,"CustEdit",WS_TABSTOP,58,103,36,10
+    CONTROL         "Custom2",IDC_MESHCACHEMOD_RANGEMAX_SPINNER,
+                    "SpinnerControl",WS_TABSTOP,94,103,8,10
+    CONTROL         "Limit to Custom Range:",IDC_MESHCACHEMOD_RANGE_CHECKBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,79,92,10
+    RTEXT           "First:",IDC_STATIC,8,91,47,8
+    RTEXT           "Last:",IDC_STATIC,8,104,47,8
+    RTEXT           "Frame Offset:",IDC_STATIC,8,67,47,8
+    GROUPBOX        "Status:",IDC_STATIC,2,120,104,36
+    LTEXT           "",IDC_MESHCACHEMOD_STATUS,6,130,96,24,SS_ENDELLIPSIS
+    EDITTEXT        IDC_MESHCACHEMOD_SEQ_EDIT,2,12,92,12,ES_AUTOHSCROLL
+END
+
+IDD_ROLLOUT_MAIN DIALOGEX 0, 0, 108, 52
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "Icon",IDC_ICON_SHOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,4,30,10
+    CONTROL         "Keep Mesh in Memory",IDC_KEEP_MESH_IN_MEMORY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,15,86,10
+    CONTROL         "Velocity To Map Channel",IDC_WRITE_VELOCITY_MAP_CHANNEL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,26,95,10
+    RTEXT           "Size:",IDC_STATIC,49,4,16,8
+    RTEXT           "Map Channel:",IDC_VELOCITY_MAP_CHANNEL_STATIC,20,38,45,8
+    CONTROL         "Custom2",IDC_ICON_SIZE,"CustEdit",WS_TABSTOP,68,4,28,10
+    CONTROL         "Custom3",IDC_ICON_SIZE_SPIN,"SpinnerControl",WS_TABSTOP,97,4,7,10
+    CONTROL         "Custom6",IDC_VELOCITY_MAP_CHANNEL,"CustEdit",WS_TABSTOP,68,38,28,10
+    CONTROL         "Custom7",IDC_VELOCITY_MAP_CHANNEL_SPIN,"SpinnerControl",WS_TABSTOP,97,38,7,10
+END
+
+IDD_ROLLOUT_FILES DIALOGEX 0, 0, 108, 264
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Timing",IDC_STATIC,2,79,104,100
+    GROUPBOX        "Loading Mode",IDC_STATIC,2,181,104,29
+    LTEXT           "Render Sequence:",IDC_STATIC,3,2,61,8
+    LTEXT           "Proxy Sequence:",IDC_PROXY_SEQUENCE_STATIC,3,37,55,8
+    CONTROL         "Automatic Proxy Path",IDC_ENABLE_AUTO_PROXY_SEQUENCE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,2,25,83,10
+    CONTROL         "Load Single Frame Only",IDC_LOAD_SINGLE_FRAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,89,91,10
+    CONTROL         "Graph [a]:",IDC_ENABLE_PLAYBACK_GRAPH,"Button",BS_AUTOCHECKBOX | BS_RIGHT | WS_TABSTOP,8,100,58,10
+    CONTROL         "Limit to Custom Range:",IDC_LIMIT_TO_RANGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,124,89,10
+    COMBOBOX        IDC_PARTICLE_FILES_BEFORE_RANGE_BEHAVIOR,5,148,47,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PARTICLE_FILES_AFTER_RANGE_BEHAVIOR,56,148,47,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MOTION_BLUR_MODE,6,191,97,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Custom2",IDC_RENDER_SEQUENCE,"CustEdit",WS_TABSTOP,2,12,89,12
+    CONTROL         "...",IDC_RENDER_SEQUENCE_BROWSE,"CustButton",WS_TABSTOP,91,12,15,12
+    CONTROL         "Custom4",IDC_PROXY_SEQUENCE,"CustEdit",WS_TABSTOP,2,47,89,12
+    CONTROL         "...",IDC_PROXY_SEQUENCE_BROWSE,"CustButton",WS_TABSTOP,91,47,15,12
+    CONTROL         "Reload Source Sequences",IDC_RELOAD_SOURCE_SEQUENCES,
+                    "CustButton",WS_TABSTOP,2,63,104,12
+    CONTROL         "Custom7",IDC_PLAYBACK_GRAPH,"CustEdit",WS_TABSTOP,68,100,27,10
+    CONTROL         "Custom8",IDC_PLAYBACK_GRAPH_SPIN,"SpinnerControl",WS_TABSTOP,95,100,7,10
+    CONTROL         "Custom9",IDC_FRAME_OFFSET,"CustEdit",WS_TABSTOP,68,112,27,10
+    CONTROL         "Custom10",IDC_FRAME_OFFSET_SPIN,"SpinnerControl",WS_TABSTOP,95,112,7,10
+    CONTROL         "Range",IDC_SET_USING_EXISTING_FRAMES,"CustButton",WS_TABSTOP,7,134,26,12
+    LTEXT           "-",IDC_RANGE_SEPARATOR_STATIC,63,135,8,8
+    CONTROL         "Custom12",IDC_FIRST_FRAME,"CustEdit",WS_TABSTOP,34,135,21,10
+    CONTROL         "Custom13",IDC_FIRST_FRAME_SPIN,"SpinnerControl",WS_TABSTOP,55,135,7,10
+    CONTROL         "Custom14",IDC_LAST_FRAME,"CustEdit",WS_TABSTOP,68,135,27,10
+    CONTROL         "Custom15",IDC_LAST_FRAME_SPIN,"SpinnerControl",WS_TABSTOP,95,135,7,10
+    RTEXT           "Frame Offset:",IDC_FRAME_OFFSET_STATIC,10,112,56,8
+    GROUPBOX        "Length Unit",IDC_STATIC,2,212,104,50
+    CONTROL         "Use File Unit",IDC_USE_FILE_UNITS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,222,55,10
+    COMBOBOX        IDC_LENGTH_UNIT,6,233,97,122,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Custom Scale:",IDC_CUSTOM_SCALE_STATIC,20,249,46,8
+    CONTROL         "Custom1",IDC_CUSTOM_SCALE,"CustEdit",WS_TABSTOP,68,248,27,10
+    CONTROL         "Custom2",IDC_CUSTOM_SCALE_SPIN,"SpinnerControl",WS_TABSTOP,95,248,7,10
+    CONTROL         "",IDC_USE_FILE_UNITS_STATUS_ICON,"CustImage",NOT WS_VISIBLE | WS_TABSTOP,67,222,8,8
+    CONTROL         "",IDC_USE_FILE_UNITS_STATUS_TEXT,"CustStatus",NOT WS_VISIBLE | WS_TABSTOP,77,221,25,10
+    RTEXT           "Loading Frame:",IDC_STATIC,10,164,56,8
+    CONTROL         "",IDC_LOADING_FRAME,"CustStatus",WS_TABSTOP,68,164,34,10
+END
+
+IDD_ROLLOUT_LOADING DIALOGEX 0, 0, 108, 122
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Render",IDC_STATIC,2,81,104,39
+    COMBOBOX        IDC_RENDER_QUALITY,6,103,96,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Viewport",IDC_STATIC,2,2,104,77
+    CONTROL         "Enable in Viewport",IDC_ENABLE_IN_VIEWPORT,"Button",BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,8,12,76,10
+    COMBOBOX        IDC_VIEWPORT_QUALITY,6,23,96,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DISPLAY_MODE,56,38,46,57,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DISPLAY_PERCENT,"CustEdit",WS_TABSTOP,56,53,39,10
+    CONTROL         "",IDC_DISPLAY_PERCENT_SPIN,"SpinnerControl",WS_TABSTOP,95,53,7,10
+    RTEXT           "Percent:",IDC_DISPLAY_PERCENT_STATIC,10,54,43,8
+    CONTROL         "Ignore on Render Node",IDC_IGNOREMISSINGVIEWPORTSEQUENCEONRENDERNODE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,65,91,10
+    CONTROL         "Enable in Render",IDC_ENABLE_IN_RENDER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,92,71,10
+    RTEXT           "Display:",IDC_STATIC,10,40,43,8
+END
+
+IDD_ROLLOUT_HELP DIALOGEX 0, 0, 108, 59
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CTEXT           "Version: ",IDC_VERSION,2,4,104,8
+    CONTROL         "Open Online Help...",IDC_ONLINE_HELP,"CustButton",WS_TABSTOP,7,15,94,12
+    CONTROL         "Show Log Window",IDC_LOG_WINDOW,"CustButton",WS_TABSTOP,7,43,94,12
+    CONTROL         "About XMesh Loader",IDC_ABOUT,"CustButton",WS_TABSTOP,7,29,94,12
+END
+
+IDD_ROLLOUT_PRESETS DIALOGEX 0, 0, 108, 73
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "Save...",IDC_PRESETS_SAVE,"CustButton",WS_TABSTOP,3,3,51,12
+    CONTROL         "Set Default...",IDC_PRESETS_SET_DEFAULT,"CustButton",WS_TABSTOP,55,3,50,12
+    CONTROL         "Delete...",IDC_PRESETS_DELETE,"CustButton",WS_TABSTOP,3,57,51,12
+    CONTROL         "Explore...",IDC_PRESETS_EXPLORE,"CustButton",WS_TABSTOP,55,57,50,12
+    LISTBOX         IDC_PRESETS,3,16,102,40,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ROLLOUT_CACHE DIALOGEX 0, 0, 108, 26
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "Keep Mesh in Memory",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,2,2,86,10
+    LTEXT           "Cache Size (MB):",IDC_STATIC,2,15,56,8
+    CONTROL         "Custom1",IDC_CUSTOM1,"",WS_TABSTOP,67,14,27,10
+    CONTROL         "Custom2",IDC_CUSTOM2,"",WS_TABSTOP,99,14,7,10
+END
+
+IDD_PRESETS DIALOGEX 0, 0, 220, 301
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "XMesh Loader Presets"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    LTEXT           "Name:",IDC_STATIC,7,9,22,8
+    CONTROL         "",IDC_NAME,"CustEdit",WS_TABSTOP,33,7,180,14
+    LTEXT           "Save the following properties:",IDC_STATIC,7,29,97,8
+    LISTBOX         IDC_LIST,7,40,206,213,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Custom2",IDOK,"",NOT WS_VISIBLE,99,280,50,14
+    CONTROL         "Custom3",IDCANCEL,"",WS_TABSTOP,163,280,50,14
+    CONTROL         "All",IDC_ALL,"",WS_TABSTOP,7,258,64,12
+    CONTROL         "Invert",IDC_INVERT,"",WS_TABSTOP,80,258,64,12
+    CONTROL         "Default",IDC_DEFAULT,"",WS_TABSTOP,149,258,64,12
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""XMeshLoaderVersion.rc""\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MESHCACHE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_MESHCACHEMOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 106
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_ROLLOUT_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 106
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_ROLLOUT_FILES, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 106
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_ROLLOUT_LOADING, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 106
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_ROLLOUT_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 106
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_ROLLOUT_CACHE, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 106
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 24
+    END
+
+    IDD_PRESETS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 294
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_KRAKATOA_GUI        BITMAP                  "Icons\\KrakatoaGUI.bmp"
+
+IDB_LAMPS               BITMAP                  "Icons\\Lamp.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ROLLOUT_HELP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_MESHCACHE           "MeshCache"
+    IDS_STORE_VELOCITY      "Store Velocity"
+    IDS_VELOCITY_CHANNEL    "Velocity Channel"
+    IDS_VELOCITY_CLAMP      "Velocity Max Value"
+    IDS_THRESHOLD           "Threshold"
+    IDS_PARAMETERS          "Parameters"
+    IDS_MESHCACHEMOD_SEQ_CAPTION "Pick an XMesh Sequence"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MESHCACHEMOD_SEQ_FILETYPES 
+                            "XMesh Files(.xmesh)|*.xmesh|All Files(*.*)|*.*"
+    IDS_SHOWICON            "showIcon"
+    IDS_ICONSIZE            "iconSize"
+    IDS_MESHSCALE           "meshScale"
+    IDS_KEEPMESHINMEMORY    "keepMeshInMemory"
+    IDS_MESHCACHE_CLASS     "MeshCache"
+    IDS_MESHCACHEOBJECT     "Mesh Cache"
+    IDS_WRITEVELOCITYMAPCHANNEL "writeVelocityMapChannel"
+    IDS_VELOCITYMAPCHANNEL  "velocityMapChannel"
+    IDS_RENDERSEQUENCE      "renderSequence"
+    IDS_PROXYSEQUENCE       "proxySequence"
+    IDS_AUTOGENPROXYPATH    "autogenProxyPath"
+    IDS_LOADSINGLEFRAME     "loadSingleFrame"
+    IDS_FRAMEOFFSET         "frameOffset"
+    IDS_LIMITTORANGE        "limitToRange"
+    IDS_RANGEFIRSTFRAME     "rangeFirstFrame"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_RANGELASTFRAME      "rangeLastFrame"
+    IDS_ENABLEPLAYBACKGRAPH "enablePlaybackGraph"
+    IDS_PLAYBACKGRAPHTIME   "playbackGraphTime"
+    IDS_BEFORERANGEBEHAVIOR "beforeRangeBehavior"
+    IDS_AFTERRANGEBEHAVIOR  "afterRangeBehavior"
+    IDS_LOADMODE            "loadMode"
+    IDS_ENABLEVIEWPORTMESH  "enableViewportMesh"
+    IDS_ENABLERENDERMESH    "enableRenderMesh"
+    IDS_RENDERSEQUENCEID    "renderSequenceID"
+    IDS_VIEWPORTSEQUENCEID  "viewportSequenceID"
+    IDS_ROLLOUT_MAIN        "XMesh Loader"
+    IDS_ROLLOUT_FILES       "Files"
+    IDS_ROLLOUT_LOADING     "Loading"
+    IDS_RENDERUSINGVIEWPORTSETTINGS "renderUsingViewportSettings"
+    IDS_ROLLOUT_HELP        "Help"
+    IDS_PARAMETER_CHANGE    "Parameter Change"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DISPLAYMODE         "displayMode"
+    IDS_DISPLAYPERCENT      "displayPercent"
+    IDS_USEFILELENGTHUNIT   "useFileLengthUnit"
+    IDS_LENGTHUNIT          "lengthUnit"
+    IDS_IGNOREMISSINGVIEWONRENDERNODE 
+                            "ignoreMissingViewportSequenceOnRenderNode"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "XMeshLoaderVersion.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
